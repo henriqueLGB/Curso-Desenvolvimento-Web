@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        class Sofa{
+
+
+            constructor(tamanho,qtde_lugares,reclina,peso,cor){
+
+                this.tamanho        =   tamanho
+                this.qtde_lugares   =   qtde_lugares
+                this.reclina        =   reclina
+                this.peso           =   peso 
+                this.cor            =   cor
+
+
+            }
+
+
+            corSofa(){
+                return this.cor 
+            }
+
+            reclinar(){
+
+                if(this.reclina === true){
+                    console.log('Reclinou')
+                }else if(this.reclina === false){
+                    console.log('Não Reclinou')
+                }
+
+            }
+
+            tamanhoSofa(){
+                return this.tamanho
+            }
+
+            pesoSofa(){
+               return this.peso
+            }
+
+            QuantidadeLugares(){
+                return this.qtde_lugares
+            }
+
+        }
+
+        let sofa  = new Sofa(200,4,false,20,'vermelho')
+        let sofa2 = new Sofa(500,6,true,200,'Marrom')
+        
+        console.log(sofa.tamanhoSofa())
+        console.log(sofa.QuantidadeLugares())
+        sofa.reclinar()
+        console.log(sofa.pesoSofa())
+        console.log(sofa.corSofa())
+
+
+        
+     
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

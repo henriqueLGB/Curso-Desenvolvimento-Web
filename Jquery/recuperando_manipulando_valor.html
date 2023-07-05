@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperando, manipulando, valor</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p>Nome:</p>
+    <input type="text" id="nome">
+    </br>
+    <p>Onde você nos encontrou ?</p>
+    <select id="origem">
+        <option value="1">Google</option>
+        <option value="2">Yahoo</option>
+        <option value="3">facebook</option>
+        <option value="4">rádio</option>
+    </select>
+    <br/>
+    <p>Sexo:</p>
+    <input type="radio" name="sexo" class="sexo" value="m">Masculino
+    <input type="radio" name="sexo" class="sexo" value="f">Feminino
+    <br/>
+
+    <p>Interesses:</p>
+    <input type="checkbox" name="Interesse" class="Interesse" value="php">PHP </br>
+    <input type="checkbox" name="Interesse" class="Interesse" value="js">JS </br>
+    <input type="checkbox" name="Interesse" class="Interesse" value="Angular">Angular </br>
+    <input type="checkbox" name="Interesse" class="Interesse" value="nodeJS">NodeJS </br>
+
+</body>
+<script>
+    $(document).ready(() => {
+        console.log($('#nome').val())
+        console.log($('#origem').val())
+        console.log($('.interesse:checked').val())
+
+        $.each($('interesse:checked'),(indice,valor) => {
+            console.log(indice,valor)
+        })
+
+    })
+</script>
+</html>

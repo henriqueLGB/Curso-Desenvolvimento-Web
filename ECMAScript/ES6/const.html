@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        
+        /* CONSTANTES NÃO PODE SER MUDADO SEU VALOR, AO DECLARA-LÁ  DEVE-SE ATRIBUIR UM VALOR */
+        const SERIE = 'Friends' 
+
+        /* NESSE CASO POR CONTA DA DIFERENÇA DO ESCOPO NÃO OCORRERÁ ERRO */
+        function x(){
+            const SERIE = 'The Walking Dead'   
+            console.log('Dentro da função : ' + SERIE )
+        }
+        
+        x()
+
+        console.log('Escopo Global : ' + SERIE )
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

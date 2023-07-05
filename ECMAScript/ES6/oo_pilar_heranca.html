@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        class Animal{
+
+            constructor(){
+
+                this.cor =  ''
+                this.tamanho = null
+
+            }
+
+            dormir(){
+                console.log('Dormir')
+            }
+
+        }
+
+        /* INDÍCA QUE A CLASSE CACHORRO TERÁ ACESSO AOS METODOS E ATRIBUDOS DA CLASSE PAI(ANIMAL)*/
+        class Cachorro extends Animal {
+
+            constructor(){
+                super()
+                this.orelhas = 'Grandes e Caídas'
+            }
+
+            correr(){
+                console.log('Correr')
+            }
+
+
+            rosnar(){
+                console.log('Rosnar')
+            }
+
+
+        }
+
+        class Passaro extends Animal{
+
+            constructor(){
+                super()
+                this.bico   = 'curto'
+
+
+            }
+
+
+            
+            voar(){
+                console.log('Voar')
+            }
+
+
+        }
+
+        class Papagaio extends Passaro{
+            constructor(){  
+                this.bico = 'medio'
+                this.sabeFalar = true
+            }
+
+            falar(){
+                console.log('Fala')
+            }
+        }
+
+        let cachorro = new Cachorro()
+        let passaro  = new Passaro()
+
+
+        console.log(cachorro)
+
+        console.log(passaro)
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

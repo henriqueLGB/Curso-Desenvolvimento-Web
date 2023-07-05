@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando Elementos parte 1</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <h1>Selecionando Elementos Parte 1</h1>
+    <div>Div 1</div>
+    <div>Div 2</div>
+
+    <ul id="lista1">
+        <li>Menu 1 - Item 1</li>
+        <li>Menu 1 - Item 2</li>
+        <li>Menu 1 - Item 3</li>
+    </ul>
+
+    
+    <ul>
+        <li class="itensMenu2">Menu 2 - Item 1</li>
+        <li class="itensMenu2">Menu 2 - Item 2</li>
+        <li class="itensMenu2">Menu 2 - Item 3</li>
+    </ul>    
+
+    <input type="text" placeholder="Campo 1">
+
+    <select>
+        <option>Selecione uma opção</option>
+        <option>opcao 1</option>
+        <option>opcao 2</option>
+    </select>
+
+    <img src="carro.jpg">
+
+</body>
+<script>
+    console.log($('h1')) //SELECIONANDO PELA TAG
+    console.log($('div')) // SELECIONANDO PELA TAG
+    console.log($('.itensMenu2')) //SELECIONANDO PELA CLASS
+    console.log($('#lista1')) // SELECIONANDO PELO ID
+</script>
+</html>

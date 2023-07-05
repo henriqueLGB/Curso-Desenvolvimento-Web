@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        class Tv {
+
+
+            // No javascrip ECMA6 NÃO ESTÁ DISPONÍVEL O RECURSO DE VISIBILIDADE DOS ATRIBUIDOS
+            //POR CONTA DISSO UTILIZAMOS _ ANTES DA VARIAVÉL PARA IDENTIFICA-LÁ COMO PRIVATE OU PROTECTED 
+            
+            constructor(){
+                this._relacaoCanais = Array(2,4,5,6,7,10)
+                this._canalAtivo    = 5
+                this._volume        = 5
+
+            }
+
+            //getters e setters
+            get canalAtivo(){
+                return this._canalAtivo
+            }
+
+            set canalAtivo(canal){
+
+                if(this._relacaoCanais.indexOf(canal) === -1){
+                    return console.log('Canal não encontrado')
+                }
+
+                this._canalAtivo = canal
+            }
+
+
+        }
+
+        let tv = new Tv()
+        
+        tv.canalAtivo = 10
+        console.log(tv.canalAtivo)
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

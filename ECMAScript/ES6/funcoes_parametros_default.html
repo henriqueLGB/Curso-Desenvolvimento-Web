@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        /* COM A FUNÇÃO DEFAULT DA PARA VOCÊ ATRIBUIR UM VALOR DEFAULT PARA OS PARAMETROS */
+        function contarUmaHistoria(personagem = 'Fuba',atividade = 'correr no parque',nome_dono = 'João'){
+            document.write(`Era uma vez , um cachorro chamado  ${personagem}, ele adorava ${atividade} , seu dono era o ${nome_dono} , e eles viveram felizes para sempre`)
+        }
+
+        /* SE AO ATRIBUIR A UM PARAMETRO O VALOR UNDEFINED ELE RETORNA AO QUE FOI ATRIBUÍDO */
+        contarUmaHistoria('Juninho','Passear na floresta','Henrique')
+
+    </script>
+</head>
+
+<body>
+    <div id="output"></div>
+</body>
+
+</html>

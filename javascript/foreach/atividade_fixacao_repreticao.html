@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+   
+   <script>
+
+
+    document.write('Percorrendo lista de array no FOR');
+    document.write('<br>')
+
+    var listaFrutas = Array()
+
+    listaFrutas[0] = 'Maça'
+    listaFrutas[1] = 'Uva'
+    listaFrutas[2] = 'Pera'
+    listaFrutas[3] = 'Morango'
+    listaFrutas[4] = 'Abacaxi'
+
+    for(var i = 0; i < listaFrutas.length;i++){
+        document.write(listaFrutas[i] + '</br>')
+    }
+
+    document.write('<hr>')
+
+    document.write('tabuada do 1 ao 10 usando while');
+    document.write('<br>')
+
+    var x = 1
+    var y = 1
+
+    while(y <= 10){
+
+        while(x <= 10){
+
+            document.write(y + 'x' + x + '=' + (y*x) + '</br>')
+            x++
+        }
+
+        x = 1
+        
+        document.write('<hr>')
+   
+        y++
+    }
+
+
+   </script>
+    
+  </head>
+</html>

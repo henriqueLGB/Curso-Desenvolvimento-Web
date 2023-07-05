@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserinfo removendo elementos</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<script>
+    $(document).ready(() => {
+        //Adiciona um elemento html com append
+        //$('#lista1').append('<li>Item 4</li>')
+
+        //Adiciona um elemento html no final com prepend
+        $('#lista1').prepend('<li>Item 4</li>')
+
+        $('#lista1').html('<p>teste utilizando HTML</p>')
+        $('#lista1').remove()
+
+        //Adiciona o elemento html após a tag html
+        $('#lista2').after('<p>Eu fui inserido após a div</p>')
+        $('#lista2').before('<p>Eu fui inserido após a div2</p>')
+
+
+    })
+</script>
+<body>
+    <ul id="lista1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <div id="lista2">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <hr/>
+</body>
+
+</html>

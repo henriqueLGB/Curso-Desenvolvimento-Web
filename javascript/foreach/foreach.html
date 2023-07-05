@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+   
+   <script>
+
+
+    var listaConvidados = ['Jorge','Jamilton','Ana','Maria','Henrique'];
+
+    console.log(listaConvidados )
+
+    listaConvidados.forEach(function callback(valor,indice,array){
+
+        //Logica
+        console.log('indice ' + indice + ' | Valor ' + valor )
+        
+        if(valor == 'Ana'){
+            array[indice] = 'Julia';
+        }
+
+    })
+
+        
+   </script>
+    
+  </head>
+</html>
